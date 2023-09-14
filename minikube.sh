@@ -21,5 +21,14 @@ minikube start --force
 # complete setup https://computingforgeeks.com/how-to-install-minikube-on-ubuntu-debian-linux/
 
 
+# kubectl cluster-info
+# kubectl config view
+# kubectl get nodes
+#  minikube ssh
+# kubectl addons list
+# minikube dashboard
+# minikube dashboard --url
+
+
 
 
