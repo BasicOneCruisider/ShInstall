@@ -16,7 +16,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 # kubectl version -o json  --client
 
 # start minikube 
-minikube start
+minikube start --force
 
 # complete setup https://computingforgeeks.com/how-to-install-minikube-on-ubuntu-debian-linux/
 
