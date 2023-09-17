@@ -1,0 +1,33 @@
+#!/bin/bash
+echo "Installing Jenkins on Ubuntu..."
+
+# Mettre à jour les références des packages
+sudo apt update
+
+# Installer Java (si ce n'est pas déjà fait)
+sudo apt install -y default-jre
+
+# Télécharger et ajouter la clé GPG de Jenkins
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+
+# Ajouter le référentiel Jenkins à la liste des sources de packages
+echo "deb https://pkg.jenkins.io/debian-stable binary/" | sudo tee -a /etc/apt/sources.list
+
+# Mettre à jour les références des packages après l'ajout du référentiel Jenkins
+sudo apt update
+
+# Installer Jenkins avec ses dépendances
+sudo apt install -y jenkins
+
+# Démarrer le service Jenkins
+sudo systemctl start jenkins
+
+# Activer Jenkins pour qu'il démarre au démarrage du système
+sudo systemctl enable jenkins
+
+# Afficher le mot de passe initial pour déverrouiller Jenkins
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+echo "Jenkins installation on Ubuntu complete."
+
+chmod +x install-jenkins.sh
