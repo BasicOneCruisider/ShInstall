@@ -1,2 +1,4 @@
 curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
 sudo apt install gitlab-ce
+ # sudo vim /etc/gitlab/gitlab.rb 
+# change external_url to our url
