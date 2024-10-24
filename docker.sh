@@ -1,4 +1,4 @@
-# Add Docker's official GPG key:
+# https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-fr
 sudo apt-get update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
