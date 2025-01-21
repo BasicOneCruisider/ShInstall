@@ -94,7 +94,7 @@ echo 'function y() {
 
 # install trippy
 
-  cargo install trippy --locked
+  sudo apt install trippy
 
 # install ripgrep
   #installation of binstall
